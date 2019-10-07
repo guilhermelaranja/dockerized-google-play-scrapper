@@ -1,0 +1,9 @@
+version: '3'
+services:
+  scrap:
+    build: .
+    user: node
+    working_dir: /home/node/
+    volumes:
+      - .:/home/node/mapped
+    entrypoint: /bin/bash
